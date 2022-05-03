@@ -13,5 +13,129 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <fieldset>
+        <legend>Personal information</legend>
+        <div class="formField">
+          Surname:
+          <input type="text" id="surname" name="surname">
+        </div>
+        <div class="formField">
+          Name:
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="formField">
+          How old are you?:
+          <input
+            type="number"
+            id="age"
+            name="age"
+            value="12"
+            minlength="1"
+            maxlength="112"
+          >
+        </div>
+
+        <div class="formField">
+          Full date of birth:
+          <input
+            type="date"
+            id="birthDate"
+            name="birthDate"
+          >
+        </div>
+
+        <div class="formField">
+          I accept th term of the agreement:
+          <input
+            type="checkbox"
+            id="termCheckBox"
+            name="termCheckBox"
+          >
+        </div>
+
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Registration</legend>
+
+        <div class="formField">
+          E-mail
+          <input type="email" id="email" name="email" placeholder="email@example.com">
+        </div>
+        <div class="formField">
+          Password:
+          <input type="password" id="pass" name="pass" >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div class="formField">
+          Do you love cats?
+          <input type="radio" id="catsRadio" name="yes">
+          Yes
+          <input type="radio" id="catsRadio" name="no">
+          No
+        </div>
+        <div class="formField">
+          What is your favorute color?
+          <input type="color">
+        </div>
+        <div class="formField">
+          <label for="">
+            What time do you go to bed?
+            <input type="time">
+          </label>
+        </div>
+        <div class="formField">
+          <label for="">
+            What are you favorite brand of cars?
+            <select name="car" id="car" multiple>
+              <option value="bmv">BMV</option>
+              <option value="audi">Audi</option>
+              <option value="lada">Lada</option>
+            </select>
+          </label>
+        </div>
+        <div class="formField">
+          <label for="">
+            How do you rate our work?
+            <input
+              type="range"
+              min="1"
+              max="10"
+              step="1"
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional info:</legend>
+        <div class="fornmField">
+          <label for="">
+            Comments:
+            <textarea name="adInfo" id="adInfo" cols="20" rows="5"></textarea>
+          </label>
+        </div>
+        <div class="fornmField">
+          <label for="">
+            Would you recommend us?
+            <select name="recommend" id="recommend" required>
+              <option value="" disabled selected>Choose one option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      <button class="button">Submit</button>
+    </form>
+
   </body>
 </html>
