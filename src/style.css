@@ -1,13 +1,17 @@
 /* styles go here */
+
 .formField {
-  margin: 10px;
-  font-weight: bold;
+  margin: 10px 0;
 }
 
-.button {
-  margin: 5px;
+.top {
+  margin-top: 0;
+}
+
+.bottom {
+  margin-bottom: 0;
 }
 
 .field {
-  margin: 20px;
+  margin-bottom: 20px;
 }

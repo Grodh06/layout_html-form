@@ -11,37 +11,46 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
-      <fieldset class="field" id="1">
+      <fieldset class="field" name="1">
         <legend>Personal information</legend>
-        <div class="formField">
+        <div class="formField top">
           <label for="surname">
             Surname:
           </label>
-          <input type="text" id="surname" name="surname" autocomplete="off" required>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            autocomplete="off"
+            required
+          >
         </div>
         <div class="formField">
           <label for="name">
             Name:
           </label>
-          <input type="text" id="name" name="name"  autocomplete="off" required>
+          <input type="text" id="name"
+            name="name"
+            autocomplete="off"
+            required
+          >
         </div>
         <div class="formField">
           <label for="age">
-            How old are you?:
+            How old are You?
           </label>
           <input
             type="number"
             id="age"
             name="age"
             value="12"
-            minlength="1"
-            maxlength="100"
+            min="1"
+            max="100"
             required
           >
         </div>
@@ -58,9 +67,9 @@
           >
         </div>
 
-        <div class="formField">
+        <div class="formField bottom">
           <label for="termCheckBox">
-            I accept th term of the agreement:
+            I accept the term of the agreement
           </label>
           <input
             type="checkbox"
@@ -73,59 +82,85 @@
 
       </fieldset>
 
-      <fieldset class="field" id="2">
+      <fieldset class="field" name="2">
         <legend>Registration</legend>
 
-        <div class="formField">
-          <label for="email">
-            E-mail
+        <div class="formField top">
+          <label class="formField top">
+            E-mail:
           </label>
-          <input type="email" id="email" name="email" placeholder="email@example.com" required>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          >
         </div>
-        <div class="formField">
+        <div class="formField bottom">
           <label for="pass">
             Password:
           </label>
-          <input type="password" id="pass" name="pass" required>
+          <input
+            type="password"
+            id="pass"
+            name="pass"
+            required
+          >
         </div>
       </fieldset>
 
-      <fieldset class="field" id="3">
+      <fieldset class="field" name="3">
         <legend>An interesting fact about you!</legend>
-        <div class="formField">
+        <div class="formField top">
           Do you love cats?
           <label>
-            <input type="radio" name="catsLove" value="yes">
+            <input
+              type="radio"
+              name="catsLove"
+              value="yes"
+            >
             Yes
           </label>
           <label>
-            <input type="radio" name="catsLove" value="no">
+            <input
+              type="radio"
+              name="catsLove"
+              value="no"
+            >
             No
           </label>
         </div>
         <div class="formField">
           <label>
-            What is your favorute color?
+            What is your favorite color?
             <input type="color" name="color">
           </label>
         </div>
         <div class="formField">
           <label>
             What time do you go to bed?
-            <input type="time" name="sleepTime">
+            <input
+              type="time"
+              name="sleepTime"
+              step="2"
+            >
           </label>
         </div>
         <div class="formField">
           <label>
-            What are you favorite brand of cars?
-            <select name="car" id="car" multiple>
-              <option value="bmv">BMV</option>
+            What are your favorite brand of cars?
+            <select
+              name="car"
+              id="car"
+              multiple>
+              <option value="bmv">BMW</option>
               <option value="audi">Audi</option>
               <option value="lada">Lada</option>
             </select>
           </label>
         </div>
-        <div class="formField">
+        <div class="formField bottom">
           <label>
             How do you rate our work?
             <input
@@ -134,25 +169,33 @@
               min="1"
               max="10"
               step="1"
+              value="1"
             >
           </label>
         </div>
       </fieldset>
 
-      <fieldset class="field" id="4">
+      <fieldset class="field" name="4">
         <legend>Additional info:</legend>
-        <div class="formField">
+        <div class="formField top">
           <label for="adInfo">
             Comments:
-            <textarea name="adInfo" id="adInfo" cols="20" rows="5"  autocomplete="off"></textarea>
+            <textarea
+              name="adInfo"
+              id="adInfo"
+              autocomplete="off"
+              maxlength="100"
+              minlength="0"
+            >
+            </textarea>
           </label>
         </div>
-        <div class="formField">
+        <div class="formField bottom">
           <label for="recommend">
             Would you recommend us?
             <select name="recommend" id="recommend">
-              <option value="yes" selected>Yes</option>
-              <option value="no">No</option>
+              <option value="yes" selected>yes</option>
+              <option value="no">no</option>
             </select>
           </label>
         </div>
